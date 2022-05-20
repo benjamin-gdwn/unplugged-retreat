@@ -92,6 +92,7 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 0;
 }
 
 header .content-wrapper {
@@ -99,6 +100,13 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header img{
+ margin: 10px 0;
+ width: 100%;
 }
 
 header nav{
@@ -106,11 +114,24 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 62%;
 }
 
 header nav ul{
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header nav ul li{
+  list-style: none;
+  width: 100%;
+}
+header nav ul li a {
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
 }
 
 footer .content-wrapper {
@@ -118,6 +139,7 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow:  row wrap;
+  width: 60%;
 }
 
 .footer-content{
@@ -125,12 +147,14 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  text-align: center;
 }
 
 footer .social p{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 5%;
 }
 
 footer .social-icons{
@@ -138,6 +162,52 @@ footer .social-icons{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  
+}
+/* ======================================================================================
+        Header  Styles
+   ======================================================================================*/
+
+header {
+  padding: 15px 0;
+}
+
+
+
+.header-divider{
+  width:100%;  
+}
+
+/* ======================================================================================
+        Footer Styles
+   ======================================================================================*/
+
+footer .contact h4{
+  margin: 15px 75px;
+  padding-top: 35px;
+}
+
+footer .contact address {
+  margin: 15px auto;
+}
+
+footer .social {
+  padding-bottom: 15px;
+}
+
+footer .social h4{
+  margin: 15px 50px;
+  padding-bottom: 0px;
+}
+
+footer .copyright {
+  margin:0 auto;
+  padding: 0 auto;
+}
+
+footer .copyright p{
+  margin:0 auto;
+  padding: 0 auto;
 }
 
 
@@ -145,10 +215,16 @@ footer .social-icons{
         Home Page
    ======================================================================================*/
 
+
 .hero-area{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  margin-top: 0;
+  padding: 0 20px;
 }
 
 aside{
@@ -156,13 +232,40 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 30px;
 
+}
+
+.form-description{
+  margin-top: 30px;
+}
+
+.form {
+  margin-top: 35px;
+}
+
+.form input {
+  margin: 15px 20px;
 }
 
 .features{
   display: flex;
   justify-content: center;
     flex-flow: row wrap;
+}
+
+.features h2 {
+  padding: 0 40px;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features article {
+  width: 50%;
+  padding: 0 15px;
+  margin: 15px auto;
 }
 
 .features .features-items{
@@ -176,7 +279,20 @@ aside{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  padding: 0 20px;
 
+}
+
+.reviews h2{
+  padding: 0 20px;
+}
+
+.reviews h3{
+  width: 50%;
+}
+
+article p {
+  padding: 10px;
 }
 /* ======================================================================================
         About Page
@@ -187,35 +303,62 @@ aside{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-.contact-section{
+.mission p{
+  padding: 0;
+}
+
+section{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin-top: 44px;
+}
+
+.contact-section {
+  width: 100%;
+}
+
+.contact-section h2, h3, address {
+  padding: 0 20px;
 }
 
 /* ======================================================================================
         FAQ Page
    ======================================================================================*/
-.faq{
+
+   .faq{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  width: 90%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.faq h2 {
+  width: 90%;
+  padding: 0 20px;
 }
 
 .faq .conent-wrapper{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-
+  flex-flow: row wrap; 
+  margin: 0 auto;
+  padding: 0;
 }
 
-
+.faq-content h4, p {
+  width: 90%;
+  padding: 0 20px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
