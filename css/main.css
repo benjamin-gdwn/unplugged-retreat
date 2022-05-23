@@ -662,8 +662,118 @@ article p {
 }
 
 @media only screen and (min-width: 1200px) {
-
-  
+/* ==========================================================================
+  Header and Footer Styles
+   ========================================================================== */
+  header nav {
+    justify-content: center;
+  }
+  header nav ul {
+    width: 30%;
+    margin: 0;
+  }
+/* ==========================================================================
+  Hompage Styles
+   ========================================================================== */
+   .hero-area{
+    justify-content: center;
+  }
+  .hero-area .content-wrapper{
+    flex-basis: 90%;
+  }
+  aside .content-wrapper {
+    justify-content: flex-start;
+    flex-basis: 75%;
+    /* width: 100%; */
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+  }
+  .features-items{
+    flex-basis: 84%;
+    justify-content: space-evenly;
+  }
+  .features .content-wrapper {
+    justify-content: center;
+    /* flex-basis: 100%; */
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+ .feature-item-description {
+   width: 50%;
+ }
+ .reviews .content-wrapper {
+  flex-basis: 90%;
+  justify-content: space-evenly;
+ }
+ .reviews .content-wrapper p, figure {
+   flex-basis: 40%;
+ }
+ .reviews .content-wrapper p {
+   width: 70%;
+ }
+ /* ==========================================================================
+  About Page styles
+   ========================================================================== */
+  .mission .content-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-basis: 83%;
+  }
+  .mission-content {
+    width: 80%;
+    justify-content: flex-start;
+    padding: 0;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+  .contact-section {
+    width: 80%;
+  }
+  .contact-section .content-wrapper {
+    flex-basis: 75%;
+    justify-content: space-between;
+  }
+  .contact-section .content-wrapper h2 {
+    padding: 0;
+    margin: 0;
+  }
+  .contact-section .content-wrapper h3 {
+    padding: 0;
+    margin: 0;
+  }
+  .contact-section .content-wrapper address {
+    padding: 0;
+    margin: 0;
+  }
+   /* ==========================================================================
+    FAQ Page styles
+   ========================================================================== */
+   .faq {
+     margin-bottom: 70px;
+   }
+   .faq .content-wrapper{
+    justify-content: space-evenly;
+    flex-basis: 95%;
+  }
+  .faq .content-wrapper h2 {
+    justify-content: center;
+    width: 84%;
+  }
+  .faq-content {
+    flex-basis: 38%;
+  }
+  .faq-content p {
+    width: 75%;
+  }
 }
 /* ==========================================================================
    Print styles.
