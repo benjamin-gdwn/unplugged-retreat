@@ -221,12 +221,15 @@ footer .content-wrapper {
   flex-flow: column wrap;
   text-align: center;
 }
+footer .social-icons {
+  
+}
 
 footer .social p{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5%;
+  
 }
 
 footer .social-icons{
@@ -234,7 +237,11 @@ footer .social-icons{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  padding-left: 55px;
   
+}
+footer .social-icons p{
+  height: 100px;
 }
 /* ======================================================================================
         Header  Styles
@@ -289,6 +296,7 @@ footer .social h4{
 footer .social-icons {
   text-decoration: none;
   list-style: none;
+  padding: 0;
 }
 
 footer .copyright {
@@ -300,7 +308,10 @@ footer .copyright p{
   margin:0 auto;
   padding: 0 auto;
 }
-
+.social-icons i{
+  font-size: 2.75em;
+  padding: 15px;
+}
 
 /* ======================================================================================
         Home Page
@@ -388,16 +399,21 @@ section .hero-area{
   font-weight: 400;
   /* flex-basis: 80%; */
 }
-
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
 .features p {
-  margin: 0;
+  text-align: center;
+  /* margin: 0; */
   font-size: 1.1em;
   line-height: 1.5em;
 }
 .features article {
   width: 50%;
-  padding: 0 15px;
+  padding: 20px 15px;
   margin: 15px auto;
+  text-align: center;
 }
 .features .content-wrapper{
   margin: 0 20px;
@@ -700,6 +716,9 @@ input[type=button] {
   footer .social h4{
     padding: 0;
   }
+  footer .social-icons{
+    padding-left: 55px;
+  }
   
   /* ==========================================================================
     Homepage Styling
@@ -926,9 +945,7 @@ input[type=button] {
     align-items: center;
     flex-flow: row wrap;
   }
- .feature-item-description {
-   width: 50%;
- }
+ 
  .reviews .content-wrapper {
   flex-basis: 90%;
   justify-content: space-evenly;
