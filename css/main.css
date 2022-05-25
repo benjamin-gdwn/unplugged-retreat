@@ -134,11 +134,11 @@ p {
 }
  
 img {
- 
+ width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -245,7 +245,11 @@ header {
 }
 
 header figure {
-  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -303,13 +307,21 @@ footer .copyright p{
    ======================================================================================*/
 
 .hero-area{
+  background: url(../img/jake-melara-30679-unsplash.jpg)center no-repeat;
+  background-size: cover;
+  height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 .hero-area h1 {
+  font-weight: 400;
+  font-size: 2.3em;
   margin-top: 0;
   padding: 0 20px;
+}
+.hero-area .content-wrapper {
+  flex-basis: 80%;
 }
 aside{
   background-color: #527158;
@@ -325,16 +337,31 @@ aside .content-wrapper {
 .form-description{
   margin-top: 30px;
   flex-basis: 80%;
-  font-size: 1.85em;
+  font-size: 1.1em;
   font-weight: 400;
 }
-
-.form {
-  margin-top: 35px;
-  flex-basis: 80%;
+.form-description h3 {
+  margin: 0;
   font-size: 1.85em;
+  padding-bottom: 15px;
+}
+.form-description p {
+  font-size: 1.1em;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.form {
+  margin-top: 15px;
+  flex-basis: 80%;
+  font-size: 0.8em;
   font-weight: 400;
   margin-bottom: 25px;
+}
+.form h3{
+  font-size: 1.85em;
+  font-weight: 400;
 }
 
 .form input {
@@ -344,9 +371,28 @@ aside .content-wrapper {
 section .hero-area{
   margin-top: 44px;
 }
+.features{
+  background: url(../img/rawpixel-800820-unsplash1.jpg) center no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.features .content-wrapper{
+  flex-basis: 80%;
+}
+.features h2{
+  font-size: 2.25em;
+  font-weight: 400;
+  /* flex-basis: 80%; */
+}
 
 .features p {
   margin: 0;
+  font-size: 1.1em;
+  line-height: 1.5em;
 }
 .features article {
   width: 50%;
@@ -363,6 +409,9 @@ section .hero-area{
   padding: 0 20px;
   background-color: #2a423a;
 }
+.reviews figure {
+  width: 89%;
+}
 .reviews h2{
   font-size: 2.2em;
   font-weight: 400;
@@ -371,7 +420,10 @@ section .hero-area{
   font-size: 1.85em;
   font-weight: 400;
 }
-
+.reviews p{
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
 }
 aside .form {
   margin-top: 30px;
@@ -392,7 +444,7 @@ input[type=button] {
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
-  font-size: 1.125em;
+  font-size: 1.85em;
   color: #e2e3ed;
   border: none;
   text-align: center;
@@ -604,7 +656,7 @@ input[type=button] {
     margin: 30px 30px;
   }
   header figure {
-    margin: 0;
+    width: 30%;
   }
   .header-divider {
     width: 31%;
@@ -653,7 +705,6 @@ input[type=button] {
     Homepage Styling
    ========================================================================== */
    .hero-area {
-    width: 100%;
     margin: 0 0;
     justify-content: flex-start;
   }
@@ -662,8 +713,12 @@ input[type=button] {
     padding: 0;
     margin: 30px 65px;
   }
-  .hero-area .content-wrapper {
+  .hero-area .content-wrapper{
     margin: 0;
+  }
+  .hero-area .content-wrapper h1 {
+    /* margin-left: 20px; */
+    padding: 60px 25px;
   }
   aside{
     padding: 0;
@@ -692,12 +747,9 @@ input[type=button] {
     padding: 0;
     margin: 0;
   }
-  .features {
-    margin-top: 60px;
-  }
   .features h2 {
-    width: 80%;
-    margin: 0 30px;
+    margin: 0;
+    padding: 60px 20px;
   }
   section .features-items{
     width: 100%;
@@ -711,10 +763,12 @@ input[type=button] {
     margin: 0;
     flex-basis: 30%;
     margin-top: 5px;
+    margin-bottom: 5px;
   }
   .reviews {    
     padding: 90px 0;
   }
+
   .reviews .content-wrapper {
     display: flex;
     justify-content: center;
@@ -736,8 +790,6 @@ input[type=button] {
   }
    .reviews figure{
     width: 40%;
-    border: 1px solid black;
-    height: 205px;
     margin: 0;
     margin-left: 35px;
     margin-right: 5px;
@@ -822,6 +874,9 @@ input[type=button] {
   header nav {
     justify-content: center;
   }
+  header figure {
+    width: 26%;
+  }
   header nav ul {
     width: 30%;
     margin: 0;
@@ -833,7 +888,7 @@ input[type=button] {
     justify-content: center;
   }
   .hero-area .content-wrapper{
-    flex-basis: 90%;
+    flex-basis: 93%;
   }
   aside .content-wrapper {
     justify-content: center;
@@ -879,7 +934,7 @@ input[type=button] {
   justify-content: space-evenly;
  }
  .reviews .content-wrapper p, figure {
-   flex-basis: 40%;
+   flex-basis: 35%;
  }
  .reviews .content-wrapper p {
    width: 70%;
