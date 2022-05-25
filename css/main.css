@@ -138,7 +138,7 @@ img {
 }
  
 figure {
- margin: 0;
+ margin: 0 auto;
 }
  
 address {
@@ -172,8 +172,6 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
-  /* margin: 0 auto; */
 }
 
 header img{
@@ -187,16 +185,14 @@ header nav{
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 62%;
-  padding-bottom: 20px;
+  flex-basis: 100%;
  
 }
 
 header nav ul{
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  flex-basis: 50%;
   padding-left: 0;
 }
 
@@ -211,7 +207,6 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow:  row wrap;
-  width: 60%;
 }
 
 .footer-content{
@@ -247,9 +242,6 @@ footer .social-icons p{
         Header  Styles
    ======================================================================================*/
 
-header {
-  padding: 15px auto;
-}
 
 header figure {
   width: 60%;
@@ -257,10 +249,6 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.header-divider{
-  width:100%;  
 }
 
 /* ======================================================================================
@@ -284,14 +272,14 @@ footer .contact address {
 }
 
 footer .social {
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
 }
 
 footer .social h4{
   font-size: 1.83em;
-  margin: 15px 50px;
   padding-bottom: 0px;
   font-weight: 400;
+  margin: 0;
 }
 footer .social-icons {
   text-decoration: none;
@@ -511,7 +499,7 @@ input[type=button] {
   flex-flow: row wrap;
 }
 .column-one, .column-two {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .column-one h3{
   font-size: 1.8em;
@@ -539,20 +527,17 @@ input[type=button] {
         FAQ Page
    ======================================================================================*/
 
-   .faq{
+  .faq{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
   padding: 0 115px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .faq h2 {
-  width: 90%;
   padding:  20px;
-  padding-top: 100px;
-  padding-bottom: 32px;
   font-weight: 400;
   font-size: 3em;
 }
@@ -667,21 +652,30 @@ input[type=button] {
    Header and Footer styling
    ========================================================================== */
   header .content-wrapper {
-    justify-content: space-between;
-    flex-flow: row;
-    margin: 30px 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 100%;
+    /* margin: 30px 30px; */
   }
   header figure {
     width: 30%;
+    margin: 0;
   }
-  .header-divider {
-    width: 31%;
+  header figure img {
+    padding: 0;
+  }
+  header nav{
+    flex-basis: 20%;
+  }
+  header nav ul {
+    flex-basis: 75%;
   }
 
  
   footer .content-wrapper{
-    width: 100%;
-    padding-top: 30px;
+  flex-basis: 100%;    
+  padding-top: 30px;
     
   }
   footer .contact .social {
@@ -690,12 +684,10 @@ input[type=button] {
     padding-bottom: 100px;
   }
   .footer-content{
-    padding-top: 30px;
-    display: flex;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
   }
   footer .contact{
@@ -705,9 +697,7 @@ input[type=button] {
     flex-basis: 50%;
   }
   footer .copyright {
-    padding-top: 140px;
-    width: 100%;
-    flex-basis: 100%;
+    padding-top: 80px
   }
   footer .contact h4 {
     padding: 0;
@@ -717,7 +707,7 @@ input[type=button] {
     padding: 0;
   }
   footer .social-icons{
-    padding-left: 55px;
+    justify-content: center;
   }
   
   /* ==========================================================================
@@ -851,7 +841,7 @@ input[type=button] {
   .contact-section .content-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
   }
   .contact-section .content-wrapper h2 {
@@ -890,7 +880,11 @@ input[type=button] {
 /* ==========================================================================
   Header and Footer Styles
    ========================================================================== */
-  header nav {
+  header .content-wrapper {
+    justify-content: space-around;
+    flex-basis: 90%;
+  }
+   header nav {
     justify-content: center;
   }
   header figure {
@@ -907,7 +901,7 @@ input[type=button] {
     justify-content: center;
   }
   .hero-area .content-wrapper{
-    flex-basis: 93%;
+    flex-basis: 90%;
   }
   aside .content-wrapper {
     justify-content: center;
@@ -959,28 +953,39 @@ input[type=button] {
  /* ==========================================================================
   About Page styles
    ========================================================================== */
-  .mission .content-wrapper {
+  .mission {
+    flex-basis: 100%;
+  }
+   .mission .content-wrapper {
+     flex-basis: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    flex-basis: 83%;
   }
   .mission-content {
-    /* width: 80%; */
+  flex-basis: 100%;    
     align-items: flex-start;
+    justify-content: space-evenly;
     padding: 0;
     padding-bottom: 50px;
     margin: 0;
   }
+  .mission-content h1 {
+    flex-basis: 90%;
+  }
   .map figure {
     /* padding-bottom: 33%; */
   }
+  .contact-section {
+    justify-content: center;
+    flex-basis: 100%;
+  }
   .contact-section .content-wrapper {
-    flex-basis: 75%;
     justify-content: space-between;
   }
   .contact-section .content-wrapper h2 {
     margin: 0;
+    flex-basis: 150%;
   }
   .contact-section .content-wrapper h3 {
     padding: 0;
@@ -989,6 +994,11 @@ input[type=button] {
   .contact-section .content-wrapper address {
     padding-top: 40px;
     margin: 0;
+    width: 50%;
+    text-align: left;
+  }
+  .column-one{
+
   }
    /* ==========================================================================
     FAQ Page styles
